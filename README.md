@@ -1,1 +1,4 @@
-# hw7_workWithFiles
+**Задание**
+Написать несколько тестов, используя другие сайты и файлы. 
+
+Почитать про классы InputStream, OutputStream, Reader, Writer
