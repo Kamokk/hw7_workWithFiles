@@ -7,10 +7,10 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.IOException;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.*;
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class DownloadXlsFile {
 
@@ -29,5 +29,6 @@ public class DownloadXlsFile {
                 .getStringCellValue()
                 .contains("БЛ Бальзам оттеночный д/волос тон 08.1 теплый каштан/20шт/7705");
         assertTrue(checkPassed);
+
     }
 }

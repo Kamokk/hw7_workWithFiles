@@ -11,7 +11,8 @@ import static io.qameta.allure.Allure.step;
 
 
 public class UploadFileText {
-    private static final String REPOSITORY="/styled/file-upload-test.html";
+    private static final String REPOSITORY = "/styled/file-upload-test.html";
+
     @Test
     @DisplayName("Загрузка файла")
     public void uploadFileText() {

@@ -10,21 +10,18 @@ import java.io.IOException;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class DownloadTextFile
-
-{
+public class DownloadTextFile {
 
     @Test
     @DisplayName("Скачивание текстового файла и проверка его содержимого")
     void downloadSimpleTextFileTest() throws IOException {
 
-            open("https://testpages.herokuapp.com/styled/download/download.html");
+        open("https://testpages.herokuapp.com/styled/download/download.html");
 
-            File download = $("#direct-download-a").download();
-            String fileContent = IOUtils.toString(new FileReader(download));
+        File download = $("#direct-download-a").download();
+        String fileContent = IOUtils.toString(new FileReader(download));
 
 
         assertTrue(fileContent.contains("This is a text file.\n" +
